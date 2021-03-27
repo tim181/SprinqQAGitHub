@@ -1,0 +1,94 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-27T14:41:08.779Z",
+        "before": [
+          {
+            "result": {
+              "duration": 492000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpAPI()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Verify Response code for single user get reqres api",
+        "description": "",
+        "id": "api-test-for-rest-booker;verify-response-code-for-single-user-get-reqres-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user set up request for single user get reqres api",
+            "match": {
+              "location": "com.automation.stepdef.RestAssuredRequestStep.user_set_single_user_get_reqres_api()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1480000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user perform get the request",
+            "match": {
+              "location": "com.automation.stepdef.RestAssuredRequestStep.user_get_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "verify response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "com.automation.stepdef.RestAssuredResponseStep.verify_response_code_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@e2e"
+          }
+        ]
+      }
+    ],
+    "name": "API Test For Rest Booker",
+    "description": "  Developer - Chirag\n  Tester   - Yusuf",
+    "id": "api-test-for-rest-booker",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BookingAPITest.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
